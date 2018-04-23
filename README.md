@@ -1,4 +1,5 @@
-# firebase-auth
+firebase-auth
+=============
 Firebase auth test scripts
 
 
@@ -20,5 +21,12 @@ Authentication requires the following details in a yaml:
 $ git clone https://github.com/Ch3ck/firebase-auth.git
 $ cd firebase-auth
 $ pip install --user firebase-admin
+$ pip install --user google-api-python-client google-auth
+$ pip install --user google-auth google-auth-oauthlib google-auth-httplib2
 $ python firebase-auth.py #edit file as you see fit.
 ```
+
+Maintainers
+-----------
+
+- `@Ch3ck <https://github.com/Ch3ck>`_ (Nyah Check)
