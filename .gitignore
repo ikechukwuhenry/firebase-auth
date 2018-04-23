@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Auth Key json
+*.json
+
 # C extensions
 *.so
 
