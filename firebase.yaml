@@ -1,0 +1,6 @@
+--- 
+firebase: 
+  cert_file: cert_file.json
+  db_url: "https://localhost.firebase-url"
+  enabled: true
+  server_key: "server_key"

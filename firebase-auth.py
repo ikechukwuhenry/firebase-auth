@@ -7,18 +7,20 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import auth
 
-cred = credentials.Certificate('./authKey.json')
-cred = credentials.RefreshToken('path/to/refreshToken.json')
-default_app = firebase_admin.initialize_app(cred, {
-	'databaseURL': '',
-	'databaseAuthVariableOverride': {
-		'uid': 'service-worker'
-	}
-})
 
-firebase_admin.initialize_app(cred, {
-				'databaseURL': self.config.get('firebase', 'db_url'),
-				'databaseAuthVariableOverride': {
-					'uid': 'service-worker'
-				}
-			})
+try: 
+	cred = credentials.Certificate('cert_file.json')
+	print 'Credentials authentication success!'
+	token = cred.get_access_token()
+	print 'Token access success'
+	default_app = firebase_admin.initialize_app(cred, {
+		'databaseURL': 'db_url_link',
+		'databaseAuthVariableOverride': {
+		'uid': 'specify auth UID'
+		}
+	})
+	print 'Default app init success!'
+except:
+	print 'Error occured on firebase auth'
+
+#

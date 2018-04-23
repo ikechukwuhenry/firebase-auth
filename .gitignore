@@ -5,7 +5,6 @@ __pycache__/
 
 # Auth Key json
 *.json
-
 # C extensions
 *.so
 
