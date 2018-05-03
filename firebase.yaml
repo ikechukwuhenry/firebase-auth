@@ -1,6 +1,5 @@
 --- 
-firebase: 
-  cert_file: ./firebase-account-dilmil-sandbox.json
-  db_url: "https://dil-mil-sandbox.firebaseio.com"
+  cert_file: cert_file.json
+  db_url: "https://localhost.firebase-url"
   enabled: true
-  server_key: "AAAAM09wBcI:APA91bGuAjq5B591N2HGfsrz6JsdIdkGg3ZYGKqcd57Z46Lw7Nc70yW6AJV7uvdwUOcE7GVVuUIU6K0FSFldRzVOIrArdGlPTCJgG4VKC0kfnIggdUKbrIvBJVFv6ony3PekUX1jPdUq"
+  server_key: "server_key"

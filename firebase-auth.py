@@ -19,7 +19,7 @@ try:
 	token = cred.get_access_token()
 	print 'Token access success'
 	default_app = firebase_admin.initialize_app(cred, {
-		'databaseURL': 'https://dil-mil-sandbox.firebaseio.com',
+		'databaseURL': 'db_url_link',
 		'databaseAuthVariableOverride': {
 		'uid': 'service-worker'
 		}
@@ -28,7 +28,7 @@ try:
 except:
 	print 'Error occured on firebase auth'
 
-# print cred.project_id, cred.service_account_email, cred.signer
+print cred.project_id, cred.service_account_email, cred.signer
 
 # Get user info in backend server.
 
